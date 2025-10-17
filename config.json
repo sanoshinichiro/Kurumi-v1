@@ -1,0 +1,42 @@
+{
+    // --- 1. Cài đặt Cốt lõi ---
+    "language": "vi",
+    "DeveloperMode": false,
+    "autocreateDB": true,
+    "notiGroup": false,
+    "allowInbox": true,
+    "BOTNAME": "Kurumi-v1 Bot",
+    "PREFIX": "!",
+
+    // --- 2. Cài đặt Người dùng ---
+    "ADMINBOT": [
+        "ID_FACEBOOK_CUA_BAN_1",
+        "ID_FACEBOOK_CUA_BAN_2" 
+        // Thêm ID admin của bạn vào đây (dạng chuỗi ký tự)
+    ],
+    "FACEBOOK_ADMIN": "ID_FACEBOOK_CUA_BAN", 
+
+    // --- 3. Cấu hình Cơ sở Dữ liệu ---
+    "DATABASE": {
+        "sqlite": {
+            "storage": "data.sqlite"
+        }
+    },
+
+    // --- 4. Cấu hình FCA (Đăng nhập và Lắng nghe) ---
+    "FCAOption": {
+        "forceLogin": true,
+        "listenEvents": true,
+        "logLevel": "error",
+        "selfListen": false,
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+        // LƯU Ý: Không cần APPSTATEPATH nếu bạn dùng Replit Secrets (FB_APPSTATE)
+    },
+    
+    // --- 5. Tùy chỉnh (Có thể thêm sau) ---
+    "log": {
+        "enable": true,
+        "spamDelay": 2
+    },
+    "adminOnly": false 
+    }
